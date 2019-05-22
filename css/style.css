@@ -1,0 +1,47 @@
+body {
+    background-color: #efeee7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 150%;
+    font-size: 18px;
+}
+
+header {
+    background-color: #333333;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #eee;
+    font-size: 28px;
+}
+h1 {
+ 
+}
+h2 {
+    font-size: 24px;
+}
+a {
+    color: #d21034;
+} 
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+#main-bio {
+    width: 70%;
+}
+#contact-info,
+#bio-image,
+#main-bio {
+    float: left;
+}
+
+#contact-info{
+    width: 30%;
+}
+#bio-image {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
