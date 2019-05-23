@@ -12,6 +12,7 @@ header {
     margin-bottom: 20px;
     color: #eee;
     font-size: 28px;
+    border-bottom: 5px solid #d21034;
 }
 h1 {
  
@@ -39,6 +40,7 @@ a {
 
 #contact-info{
     width: 30%;
+    font-size: 16px;
 }
 #bio-image {
     width: 200px;
