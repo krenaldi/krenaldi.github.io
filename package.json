@@ -1,0 +1,37 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krenaldi/krenaldi.github.io.git"
+  },
+  "keywords": [
+    "HTML",
+    "HTML5",
+    "CSS",
+    "SASS",
+    "Responsive",
+    "Web",
+    "Gulp",
+    "Node",
+    "JavaScript",
+    "Media",
+    "Queries"
+  ],
+  "author": "Kris Renaldi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krenaldi/krenaldi.github.io/issues"
+  },
+  "homepage": "https://github.com/krenaldi/krenaldi.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
