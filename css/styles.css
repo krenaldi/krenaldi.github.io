@@ -14,7 +14,11 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 2.5em;
   font-weight: bold;
-  text-transform: uppercase; }
+  color: #2eaeb8; }
+
+.github-icon {
+  height: 36px;
+  width: 36px; }
 
 .main-section {
   background-image: url("images/laptop-background-fade.png");
@@ -32,3 +36,6 @@ body {
 
 .fab {
   font-size: 1.5em; }
+
+.btn {
+  border-radius: 0; }
