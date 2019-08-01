@@ -8,17 +8,18 @@ body {
 
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  color: #606060; }
 
-.brand {
+h1, h2, p {
+  margin-top: 0;
+  margin-bottom: 1em; }
+
+h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.5em;
   font-weight: bold;
-  color: #2eaeb8; }
-
-.github-icon {
-  height: 36px;
-  width: 36px; }
+  color: #03afc2; }
 
 .main-section {
   background-image: url("images/laptop-background-fade.png");
@@ -33,6 +34,10 @@ body {
   height: 300px;
   margin-right: 20px;
   float: left; }
+
+.github-icon {
+  height: 36px;
+  width: 36px; }
 
 .fab {
   font-size: 1.5em; }
