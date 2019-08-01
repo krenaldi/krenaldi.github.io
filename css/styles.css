@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto|Six+Caps&display=swap");
 body {
   background: #ffffff; }
 
@@ -12,34 +13,68 @@ body {
   color: #606060; }
 
 h1, h2, p {
-  margin-top: 0;
-  margin-bottom: 1em; }
+  margin-top: 0; }
 
 h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 2.5em;
   font-weight: bold;
   color: #03afc2; }
 
+h2 {
+  font-family: "Six Caps", sans-serif;
+  font-size: 1.7em;
+  word-spacing: 0;
+  letter-spacing: 0.3em; }
+
 .main-section {
-  background-image: url("images/laptop-background-fade.png");
-  padding: 20px 35px 20px 35px;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  overflow: auto; }
+  background-image: url("../images/laptop-background-black.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  color: #A7A7A7; }
+
+img {
+  max-width: 100%; }
+
+@media (min-width: 42em) {
+  .about-image {
+    float: left;
+    margin-right: 1em; } }
+
+.about-name {
+  margin-bottom: .25em; }
+
+.about-title {
+  margin: .5em 0; }
+
+@supports (display: grid) {
+  .main-section {
+    display: grid;
+    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end]; }
+  .about-image {
+    grid-column: port-start / img-end;
+    grid-row: 1 / 2; }
+  .about-name {
+    grid-column: name-start / port;
+    grid-row: 1 / 2;
+    align-self: end; }
+  .about-title,
+  .about-text {
+    grid-column: port / port; } }
 
 #bio-image {
   width: 300px;
-  height: 300px;
-  margin-right: 20px;
-  float: left; }
+  height: 300px; }
 
 .github-icon {
   height: 36px;
   width: 36px; }
 
-.fab {
+.navigation {
+  height: 10vh;
   font-size: 1.5em; }
 
 .btn {
