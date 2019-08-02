@@ -101,8 +101,8 @@ footer {
   border-radius: 0; }
 
 .btn-dark {
-  padding-left: 17px;
-  padding-right: 17px; }
+  padding-left: 16.5px;
+  padding-right: 16px; }
 
 .portfolio {
   text-align: left;
@@ -145,3 +145,6 @@ footer {
 
 .portfolio-items button {
   margin-left: 1.5em; }
+
+.portfolio-items form {
+  margin-bottom: .5em; }
