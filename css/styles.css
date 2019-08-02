@@ -10,10 +10,12 @@ body {
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.3em;
-  color: #606060; }
+  color: #000000; }
 
 h1, h2, p {
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding-left: 1em; }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -21,23 +23,22 @@ h1 {
   font-weight: bold;
   color: #03afc2; }
 
-h2 {
-  font-family: "Six Caps", sans-serif;
-  font-size: 1.7em;
-  word-spacing: 0;
-  letter-spacing: 0.3em; }
-
 .main-section {
   background-image: url("../images/laptop-background-black.jpg");
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #A7A7A7;
   margin-right: 0 auto;
   padding: 5vw; }
+  .main-section h2 {
+    font-family: "Six Caps", sans-serif;
+    font-size: 1.7em;
+    letter-spacing: 0.3em;
+    word-spacing: 0;
+    color: #A7A7A7; }
 
 img {
   max-width: 100%; }
@@ -62,6 +63,7 @@ img {
   margin-bottom: .25em; }
 
 .about-title {
+  font-family: "Six Caps", sans-serif;
   margin: .5em 0;
   word-spacing: 0; }
 
@@ -74,7 +76,7 @@ img {
   width: 36px; }
 
 .navigation {
-  height: 10vh;
+  height: 5vh;
   font-size: 1em; }
 
 .btn {
@@ -93,7 +95,8 @@ img {
   position: relative;
   overflow: hidden; }
   .portfolio-item img {
-    display: block; }
+    display: block;
+    border: 2px solid black; }
 
 .portfolio-items figcaption {
   position: absolute;
@@ -110,5 +113,9 @@ img {
 
 .portfolio-title {
   color: #ffffff;
+  font-family: "Six Caps", sans-serif;
+  letter-spacing: 0.3em;
+  word-spacing: 0;
   font-size: 2.5rem;
-  margin-bottom: auto; }
+  margin-bottom: auto;
+  padding-left: 10px; }
