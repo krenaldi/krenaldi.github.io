@@ -27,25 +27,25 @@
   <div class="navigation">
     <div class="row">
       <nav class="navbar navbar-expand-sm navbar-light">
-      
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="Resume-CV.pdf">R&eacute;sum&eacute;</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.linkedin.com/in/krenaldi/"><i class="fab fa-linkedin"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/krenaldi"><i class="fab fa-github"></i></a>
-            </li>
-          </ul>
-    
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Resume-CV.pdf">R&eacute;sum&eacute;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/krenaldi/"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/krenaldi"><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
+
       </nav>
     </div>
   </div>
@@ -78,84 +78,86 @@
 
   <div class="portfolio">
     <h1 id="portfolio">My Portfolio</h1>
-    <div class="portfolio-items">
-
-      <!-- Portfolio item 1 -->
-      <figure class="portfolio-item">
-        <img src="images/common-grounds-ss.png" alt="Common Grounds Project">
-        <figcaption>
-          <h2 class="portfolio-title">Common Grounds</h2>
-          <p class="portfolio-desc">Short description</p>
-        </figcaption>
-      </figure>
-      <button type="button" class="btn btn-dark"><img src="images/github-icon-white.png" class="github-icon">
-        GitHub Deployed</button>
-      <button type="button" class="btn btn-outline-dark"><img src="images/github-icon-black.png"
-          class="github-icon"> GitHub Repository</button>
-
-      <!-- Portfolio item 2 -->
-      <figure class="portfolio-item">
-        <img src="images/trivia-quiz-ss.png" alt="Trivia Game">
-        <figcaption>
-          <h2 class="portfolio-title">Trivia Game</h2>
-          <p class="portfolio-desc">Short description</p>
-        </figcaption>
-      </figure>
-      <button type="button" class="btn btn-dark"><img src="images/github-icon-white.png" class="github-icon">
-        GitHub
-        Deployed</button>
-      <button type="button" class="btn btn-outline-dark"><img src="images/github-icon-black.png"
-          class="github-icon"> GitHub Repository</button>
-
-      <!-- Portfolio item 3 -->
-      <figure class="portfolio-item">
-        <img src="images/train-scheduler-ss.png" alt="Train Scheduler">
-        <figcaption>
-          <h2 class="portfolio-title">Train Scheduler</h2>
-          <p class="portfolio-desc">Short description</p>
-        </figcaption>
-      </figure>
-      <button type="button" class="btn btn-dark"><img src="images/github-icon-white.png" class="github-icon">
-        GitHub
-        Deployed</button>
-      <button type="button" class="btn btn-outline-dark"><img src="images/github-icon-black.png"
-          class="github-icon"> GitHub Repository</button>
-
-      <!-- Portfolio item 4 -->
-      <figure class="portfolio-item">
-        <img src="images/hangman-game-ss.png" alt="Hangman Game">
-        <figcaption>
-          <h2 class="portfolio-title">Hangman Game</h2>
-          <p class="portfolio-desc">Short description</p>
-        </figcaption>
-      </figure>
-      <button type="button" class="btn btn-dark"><img src="images/github-icon-white.png" class="github-icon">
-        GitHub
-        Deployed</button>
-      <button type="button" class="btn btn-outline-dark"><img src="images/github-icon-black.png"
-          class="github-icon"> GitHub Repository</button>
-
-      <!-- Portfolio item 5 -->
-      <!-- <figure class="portfolio-item">
-          <img src="images/placeholder5.jpg" alt="portfolio item">
+    <div class="row">
+      <div class="cols-6 portfolio-items">
+        <!-- Portfolio item 1 -->
+        <figure class="portfolio-item">
+          <img src="images/common-grounds-ss.png" alt="Common Grounds Project">
           <figcaption>
-            <h2 class="portfolio-title">Project Name</h2>
-            <p class="portfolio-desc">Short description</p>
-            <button type="button" class="btn btn-dark"><img src="images/github-icon-white.png" class="github-icon"> GitHub Deployed</button>
-            <button type="button" class="btn btn-outline-dark"><img src="images/github-icon-black.png" class="github-icon"> GitHub Repository</button>
+            <h2 class="portfolio-title">Common Grounds</h2>
+            <p class="portfolio-desc">People can sign up via email & password via Firebase Authentication and find a centralize location on where to
+              meet friends using a Geolocator API and Zomato API</p>
           </figcaption>
-        </figure> -->
+        </figure>
+        <button type="button" class="btn btn-dark"><img src="images/github-icon-white.png" class="github-icon">
+          GitHub Deployed</button>
+        <button type="button" class="btn btn-outline-dark"><img src="images/github-icon-black.png" class="github-icon">
+          GitHub Repository</button>
+      </div>
 
+      <div class="cols-6 portfolio-items">
+        <!-- Portfolio item 2 -->
+        <figure class="portfolio-item">
+          <img src="images/trivia-quiz-ss.png" alt="Trivia Game">
+          <figcaption>
+            <h2 class="portfolio-title">Trivia Game</h2>
+            <p class="portfolio-desc">A trivia game that utilizes JavaScript counters & keeps track of correct and wrong answers</p>
+          </figcaption>
+        </figure>
+        <button type="button" class="btn btn-dark"><img src="images/github-icon-white.png" class="github-icon">
+          GitHub
+          Deployed</button>
+        <button type="button" class="btn btn-outline-dark"><img src="images/github-icon-black.png" class="github-icon">
+          GitHub Repository</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="cols-6 portfolio-items">
+        <!-- Portfolio item 3 -->
+        <figure class="portfolio-item">
+          <img src="images/train-scheduler-ss.png" alt="Train Scheduler">
+          <figcaption>
+            <h2 class="portfolio-title">Train Scheduler</h2>
+            <p class="portfolio-desc">Using a Firebase Database & JavaScript, the site will allow user to input a new train schedule that calculates when the next train will arrive and at which time</p>
+          </figcaption>
+        </figure>
+        <button type="button" class="btn btn-dark"><img src="images/github-icon-white.png" class="github-icon">
+          GitHub
+          Deployed</button>
+        <button type="button" class="btn btn-outline-dark"><img src="images/github-icon-black.png" class="github-icon">
+          GitHub Repository</button>
+      </div>
+
+      <div class="cols-6 portfolio-items">
+        <!-- Portfolio item 4 -->
+        <figure class="portfolio-item">
+          <img src="images/hangman-game-ss.png" alt="Hangman Game">
+          <figcaption>
+            <h2 class="portfolio-title">Hangman Game</h2>
+            <p class="portfolio-desc">A game the utilizes the manipulation and reading of JavaScript arrays</p>
+          </figcaption>
+        </figure>
+        <button type="button" class="btn btn-dark"><img src="images/github-icon-white.png" class="github-icon">
+          GitHub
+          Deployed</button>
+        <button type="button" class="btn btn-outline-dark"><img src="images/github-icon-black.png" class="github-icon">
+          GitHub Repository</button>
+      </div>
     </div>
   </div>
 
   <!-- Contact From section -->
-  <div class="container">
+  <div class="contact">
     <div class="row">
       <div class="col-12">
         <h1 id="contact">Contact Me</h1>
         <hr>
-        <form>
+        <p>
+          If you want to talk to me about working on your web project or hiring me for your company, you can contact me
+          via email at <a href="mailto:krenaldi@comcast.net">krenaldi@comcast.net</a> or on LinkedIn.
+        </p>
+        <!-- <form>
           <div class="form-group">
             <label for="name">Name</label><br>
             <input type="text" class="form-control" name="name" id="name" placeholder="John Smith"><br>
@@ -170,7 +172,7 @@
           </div>
           <br>
           <input type="submit" class="btn btn-info" value="Submit">
-        </form>
+        </form> -->
       </div>
     </div>
   </div>
@@ -178,7 +180,7 @@
   <!-- Footer -->
   <footer>
     <div class="footer">
-      <p style="margin-top:25px">Copyright &copy; 2019</p>
+      <p>Copyright &copy; 2019</p>
     </div>
   </footer>
 
