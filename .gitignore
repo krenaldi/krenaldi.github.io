@@ -3,5 +3,6 @@ scss
 gulpfile.js
 bootstrap*
 .DS_Store
+.vscode
 
 
