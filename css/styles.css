@@ -28,7 +28,7 @@ h1 {
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 95vh;
+  height: 93vh;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -70,7 +70,8 @@ h1 {
   width: 300px;
   height: 300px; }
 
-.github-icon {
+.github-icon,
+.youtube-icon {
   height: 36px;
   width: 36px; }
 
@@ -92,7 +93,7 @@ footer {
   width: 100%; }
 
 .navigation {
-  height: 5vh;
+  height: 7vh;
   font-size: 1em; }
   .navigation .navbar {
     color: #000000; }
@@ -103,6 +104,10 @@ footer {
 .btn-dark {
   padding-left: 16.5px;
   padding-right: 16px; }
+
+.btn-outline-danger {
+  padding-left: 16.5px;
+  padding-right: 27px; }
 
 .portfolio {
   text-align: left;
