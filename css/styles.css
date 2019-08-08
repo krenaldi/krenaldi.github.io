@@ -7,6 +7,53 @@ body {
   background: #ffffff;
   padding-left: 1rem; }
 
+.menu-button {
+  position: absolute;
+  height: 17px;
+  width: 30px;
+  top: 2em;
+  left: 1.5em;
+  border: 0; }
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 15%;
+  z-index: 10; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: stretch;
+  background: #03afc2; }
+
+nav li {
+  border-bottom: 1px solid #000000;
+  text-align: center; }
+
+nav li:hover {
+  background: #A7A7A7; }
+
+nav a {
+  display: inline-block;
+  font-family: "Six Caps", sans-serif;
+  font-size: 4rem;
+  color: #000000;
+  letter-spacing: 0.3em;
+  padding: calc(100vh/11);
+  line-height: 0;
+  width: 100%; }
+  nav a:hover, nav a:focus {
+    text-decoration: none;
+    color: #ffffff; }
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: .875em;
@@ -33,11 +80,11 @@ h1 {
   background-image: url("../images/laptop-background-black.jpg");
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 93vh;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
   .main-section h2 {
     font-family: "Six Caps", sans-serif;
     font-size: 1.25em;
@@ -100,12 +147,6 @@ footer {
   padding-top: 10px;
   padding-bottom: 55px;
   width: 100%; }
-
-.navigation {
-  height: 7vh;
-  font-size: 1em; }
-  .navigation .navbar {
-    color: #000000; }
 
 .btn {
   border-radius: 0; }
