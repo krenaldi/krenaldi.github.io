@@ -11,17 +11,21 @@ body {
   position: absolute;
   height: 17px;
   width: 30px;
-  top: 2em;
-  left: 1.5em;
-  border: 0; }
+  top: 1.5em;
+  left: 1em;
+  background: transparent;
+  border: 0;
+  cursor: pointer; }
 
 nav {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  right: 15%;
-  z-index: 10; }
+  right: 20%;
+  z-index: 10;
+  transform: translateX(-100%);
+  transition: transform ease-out 250ms; }
 
 nav ul {
   margin: 0;
@@ -53,6 +57,15 @@ nav a {
   nav a:hover, nav a:focus {
     text-decoration: none;
     color: #ffffff; }
+
+.nav-is-open nav {
+  transform: translateX(0); }
+
+.nav-is-open .container-all {
+  transform: translateX(80%); }
+
+.container-all {
+  transition: transform ease-out 250ms; }
 
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
