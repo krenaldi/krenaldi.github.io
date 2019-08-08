@@ -24,7 +24,7 @@ nav {
   left: 0;
   right: 20%;
   z-index: 10;
-  transform: translateX(-100%);
+  transform: translateX(-105%);
   transition: transform ease-out 250ms; }
 
 nav ul {
@@ -39,8 +39,9 @@ nav ul {
   background: #03afc2; }
 
 nav li {
-  border-bottom: 1px solid #000000;
   text-align: center; }
+  nav li:not(:last-of-type) {
+    border-bottom: 1px solid #000000; }
 
 nav li:hover {
   background: #A7A7A7; }
@@ -50,7 +51,7 @@ nav a {
   font-family: "Six Caps", sans-serif;
   font-size: 4rem;
   color: #000000;
-  letter-spacing: 0.3em;
+  letter-spacing: .2em;
   padding: calc(100vh/11);
   line-height: 0;
   width: 100%; }
@@ -70,7 +71,8 @@ nav a {
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: .875em;
-  color: #000000; }
+  color: #000000;
+  overflow-x: hidden; }
   @media (min-width: 50em) {
     body {
       font-size: 1.3em; } }
@@ -82,12 +84,12 @@ h1, h2, p {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
   color: #03afc2; }
   @media (min-width: 50em) {
     h1 {
-      font-size: 2.5em; } }
+      font-size: 2.75em; } }
 
 .main-section {
   background-image: url("../images/laptop-background-black.jpg");
@@ -98,11 +100,15 @@ h1 {
   align-items: center;
   justify-content: center;
   position: relative; }
+  @media (max-width: 20em) {
+    .main-section {
+      height: 130vh; } }
   .main-section h2 {
     font-family: "Six Caps", sans-serif;
-    font-size: 1.25em;
+    font-size: 1.5m;
     letter-spacing: 0.3em;
     word-spacing: 0;
+    margin-left: -.45em;
     color: #A7A7A7; }
     @media (min-width: 50em) {
       .main-section h2 {
@@ -129,6 +135,9 @@ h1 {
 
 .about-name {
   margin-bottom: .25em; }
+  @media (max-width: 26em) {
+    .about-name {
+      margin-left: -.65em; } }
 
 .about-title {
   font-family: "Six Caps", sans-serif;
@@ -138,6 +147,11 @@ h1 {
 #bio-image {
   width: 300px;
   height: 300px; }
+  @media (max-width: 320px) {
+    #bio-image {
+      margin-top: 1em;
+      height: 200px;
+      width: 200px; } }
 
 .github-icon,
 .youtube-icon {
@@ -196,7 +210,7 @@ footer {
     border: 2px solid black; }
   .portfolio-item figcaption {
     position: absolute;
-    top: 110%;
+    top: 140%;
     bottom: 0;
     right: 0;
     left: 0;
