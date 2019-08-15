@@ -222,7 +222,7 @@ button {
   left: 3.5em;
   border: 0;
   cursor: pointer; }
-  @media (max-width: 801px) {
+  @media (max-width: 798px) {
     .menu-caption {
       top: 1.35em;
       left: 3em; } }
@@ -238,7 +238,7 @@ button {
   left: 3.5em;
   border: 0;
   cursor: pointer; }
-  @media (max-width: 801px) {
+  @media (max-width: 798px) {
     .close-caption {
       top: 1.35em;
       left: 3em; } }
