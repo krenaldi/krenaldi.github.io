@@ -91,6 +91,9 @@ h1 {
       margin-top: 1em;
       height: 200px;
       width: 200px; } }
+  @media (max-width: 420px) {
+    #bio-image {
+      margin-top: 1em; } }
 
 .github-icon,
 .youtube-icon {
@@ -223,6 +226,9 @@ button {
     .menu-caption {
       top: 1.35em;
       left: 3em; } }
+  @media (max-width: 420px) {
+    .menu-caption {
+      display: none; } }
 
 .close-caption {
   position: absolute;
@@ -236,6 +242,9 @@ button {
     .close-caption {
       top: 1.35em;
       left: 3em; } }
+  @media (max-width: 420px) {
+    .close-caption {
+      display: none; } }
 
 nav {
   position: fixed;
@@ -272,12 +281,12 @@ nav a {
   font-size: 4rem;
   color: #000000;
   letter-spacing: .2em;
-  padding: calc(100vh/11);
+  padding: calc(100vh/10);
   line-height: 0;
   width: 100%; }
   @media (max-width: 375px) {
     nav a {
-      padding: calc(100vh/13); } }
+      margin-right: 3em; } }
   nav a:hover, nav a:focus {
     text-decoration: none;
     color: #ffffff; }
@@ -299,6 +308,9 @@ nav a {
 
 .nav-is-open .close-caption {
   display: block; }
+  @media (max-width: 420px) {
+    .nav-is-open .close-caption {
+      display: none; } }
 
 .nav-is-open .menu-button {
   display: none; }
