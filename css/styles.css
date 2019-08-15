@@ -1,112 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto|Six+Caps&display=swap");
-body {
-  background: #ffffff; }
 
 .navigation {
   background: #ffffff;
   padding-left: 1rem; }
 
-.menu-button,
-.menu-close {
-  position: absolute;
-  height: 17px;
-  width: 30px;
-  top: 1.5em;
-  left: 1em;
-  background: transparent;
-  border: 0;
-  cursor: pointer; }
-
-.menu-caption {
-  position: absolute;
-  color: #ffffff;
-  font-size: 1rem;
-  top: 2em;
-  left: 3.5em;
-  background: transparent;
-  border: 0;
-  cursor: pointer; }
-  @media (max-width: 800px) {
-    .menu-caption {
-      top: 1.35em;
-      left: 3em; } }
-
-nav {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 20%;
-  z-index: 10;
-  transform: translateX(-105%);
-  transition: transform ease-out 250ms; }
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-around;
-  align-items: stretch;
-  background: #03afc2; }
-
-nav li {
-  text-align: center; }
-  nav li:not(:last-of-type) {
-    border-bottom: 1px solid #000000; }
-
-nav li:hover {
-  background: #A7A7A7; }
-
-nav a {
-  display: inline-block;
-  font-family: "Six Caps", sans-serif;
-  font-size: 4rem;
-  color: #000000;
-  letter-spacing: .2em;
-  padding: calc(100vh/11);
-  line-height: 0;
-  width: 100%; }
-  @media (max-width: 375px) {
-    nav a {
-      padding: calc(100vh/13); } }
-  nav a:hover, nav a:focus {
-    text-decoration: none;
-    color: #ffffff; }
-
-.menu-close {
-  display: none; }
-
-.close-caption {
-  display: none; }
-
-.nav-is-open nav {
-  transform: translateX(0); }
-
-.nav-is-open .container-all {
-  transform: translateX(80%); }
-
-.nav-is-open .menu-close {
-  display: block; }
-
-.nav-is-open .close-caption {
-  display: block; }
-
-.nav-is-open .menu-button {
-  display: none; }
-
-.nav-is-open .menu-caption {
-  display: none; }
-
-.container-all {
-  transition: transform ease-out 250ms; }
-
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: .875em;
+  background: #ffffff;
   color: #000000;
   overflow-x: hidden; }
   @media (min-width: 50em) {
@@ -296,3 +198,100 @@ button {
   margin: 0 auto;
   max-width: 75em;
   padding: .5em 0; }
+
+.menu-button,
+.menu-close {
+  position: absolute;
+  height: 17px;
+  width: 30px;
+  top: 1.5em;
+  left: 1em;
+  background: transparent;
+  border: 0;
+  cursor: pointer; }
+
+.menu-caption {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1rem;
+  top: 2em;
+  left: 3.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer; }
+  @media (max-width: 800px) {
+    .menu-caption {
+      top: 1.35em;
+      left: 3em; } }
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 20%;
+  z-index: 10;
+  transform: translateX(-105%);
+  transition: transform ease-out 250ms; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: stretch;
+  background: #03afc2; }
+
+nav li {
+  text-align: center; }
+  nav li:not(:last-of-type) {
+    border-bottom: 1px solid #000000; }
+
+nav li:hover {
+  background: #A7A7A7; }
+
+nav a {
+  display: inline-block;
+  font-family: "Six Caps", sans-serif;
+  font-size: 4rem;
+  color: #000000;
+  letter-spacing: .2em;
+  padding: calc(100vh/11);
+  line-height: 0;
+  width: 100%; }
+  @media (max-width: 375px) {
+    nav a {
+      padding: calc(100vh/13); } }
+  nav a:hover, nav a:focus {
+    text-decoration: none;
+    color: #ffffff; }
+
+.menu-close {
+  display: none; }
+
+.close-caption {
+  display: none; }
+
+.nav-is-open nav {
+  transform: translateX(0); }
+
+.nav-is-open .container-all {
+  transform: translateX(80%); }
+
+.nav-is-open .menu-close {
+  display: block; }
+
+.nav-is-open .close-caption {
+  display: block; }
+
+.nav-is-open .menu-button {
+  display: none; }
+
+.nav-is-open .menu-caption {
+  display: none; }
+
+.container-all {
+  transition: transform ease-out 250ms; }
