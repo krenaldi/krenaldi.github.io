@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto|Six+Caps&display=swap");
+body {
+  background: #ffffff; }
 
 .navigation {
   background: #ffffff;
@@ -8,7 +10,6 @@
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: .875em;
-  background: #ffffff;
   color: #000000;
   overflow-x: hidden; }
   @media (min-width: 50em) {
@@ -210,7 +211,8 @@ button {
   border: 0;
   cursor: pointer; }
 
-.menu-caption {
+.menu-caption,
+.close-caption {
   position: absolute;
   color: #ffffff;
   font-size: 1rem;
@@ -220,7 +222,8 @@ button {
   border: 0;
   cursor: pointer; }
   @media (max-width: 800px) {
-    .menu-caption {
+    .menu-caption,
+    .close-caption {
       top: 1.35em;
       left: 3em; } }
 
