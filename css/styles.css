@@ -134,7 +134,8 @@ button {
 .portfolio {
   text-align: left;
   background-color: #ffffff;
-  padding-top: 1.5em; }
+  padding-top: 1.5em;
+  padding-left: 1.5em; }
 
 #portfolio {
   margin-bottom: 1rem; }
@@ -189,7 +190,7 @@ button {
   margin-bottom: auto; }
 
 .portfolio-desc {
-  display: none; }
+  display: block; }
 
 .portfolio-items button {
   margin-left: 1.5em; }
