@@ -30,6 +30,17 @@ h1 {
     h1 {
       font-size: 2.75em; } }
 
+h4 {
+  font-family: "Roboto", sans-serif;
+  color: #03afc2; }
+
+.link {
+  text-decoration: none;
+  color: #03afc2; }
+  .link:hover, .link:focus {
+    text-decoration: none;
+    color: #ffffff; }
+
 .main-section {
   background-image: url("../images/laptop-background-black.jpg");
   background-size: cover;
