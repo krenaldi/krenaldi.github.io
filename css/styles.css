@@ -92,11 +92,9 @@ h4 {
   margin: .5em 0;
   word-spacing: 0; }
 
-.skill-wrap {
-  justify-content: center; }
-
 .skill-image {
-  padding: 1em; }
+  padding: 1em;
+  margin-top: 2em; }
 
 .bio-image {
   width: 300px;
