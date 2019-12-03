@@ -1,0 +1,152 @@
+body {
+    font-family: $ff-default;
+    font-size: .875em;
+    color: $black;
+    overflow-x: hidden;
+    @include mq {
+        font-size: 1.3em;
+    }
+}
+h1, h2, p {
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+h1 {
+    font-family: $roboto;
+    font-size: 3em;
+    font-weight: bold;
+    color: $accent;
+    @include mq {
+        font-size: 2.75em;
+    }
+}
+
+h4 {
+    font-family: $roboto;
+    color: $accent;
+}
+
+.link {
+    text-decoration: none;
+    color: $accent;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+
+.main-section {
+    background-image: url("../images/laptop-background-black.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @media (max-width: 20em) {
+        height: 130vh;
+    }
+    h2 {
+        font-family: $six-caps;
+        font-size: 1.5m;    
+        letter-spacing: $letter-spacing;
+        word-spacing: $word-spacing;
+        margin-left: -.45em;
+        color: $gray;
+        @include mq {
+            font-size: 1.7em;
+        }
+    }
+}
+
+.about-me {
+    @include container;
+    @include clearfix;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.about-image {
+    @media (min-width: 42em) {
+        float:left;
+        margin-right: 1em;
+    }
+}
+.about-name {
+    margin-bottom: .25em;
+    padding-left: .3em;
+    @media (max-width: 26em) {
+        margin-left: -.65em;
+    }
+}
+.about-title {
+    font-family: $six-caps;
+    margin: .5em 0;
+    word-spacing: $word-spacing;
+}
+
+// @supports (display: grid){
+//     .main-section {
+//         display: grid;
+//         grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
+//     }
+//     .about-image {
+//         grid-column: port-start / img-end;
+//         grid-row: 1 / 2;
+//     }
+//     .about-name {
+//         grid-column: name-start / port;
+//         grid-row: 1 / 2;
+//         align-self: end; 
+//     }
+//     .about-title,
+//     .about-text {
+//         grid-column: port / port;
+//     }
+// }
+
+.skill-image {
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.bio-image {
+    width: 300px;
+    height: 300px;
+    margin-left: 1em;
+    @media (max-width: 320px) {
+        margin-top: 1em;
+        height: 200px;
+        width: 200px;
+    }
+    @media (max-width: 420px) {
+        margin-top: 1em;
+    }
+}
+
+.github-icon, 
+.youtube-icon {
+    height: 36px;
+    width: 36px;
+}
+
+#contact {
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+.contact a {
+    color: $dark-gray;
+}
+footer {
+    background-color: $black;
+    color: $white;
+    height: 5vh;
+    position: absolute;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 55px;
+    width: 100%;
+}

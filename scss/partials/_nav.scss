@@ -1,0 +1,131 @@
+.menu-button,
+.menu-close {
+    position: absolute;
+    height: 17px;
+    width: 30px;
+    top: 1.5em;
+    left: 1em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.menu-caption {
+    position: absolute;
+    color: $white;
+    font-size: 1rem;
+    top: 2em;
+    left: 3.5em;
+    border: 0;
+    cursor: pointer;
+    @media (max-width: 798px) {
+        top: 1.35em;
+        left: 3em;
+    }
+    @media (max-width: 420px) {
+        display: none;
+    }
+}
+
+.close-caption {
+    position: absolute;
+    color: $white;
+    font-size: 1rem;
+    top: 2em;
+    left: 3.5em;
+    border: 0;
+    cursor: pointer;
+    @media (max-width: 798px) {
+        top: 1.35em;
+        left: 3em;
+    }
+    @media (max-width: 420px) {
+        display: none;
+    }
+}
+nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 20%;
+    z-index: 10;
+    transform: translateX(-105%);
+    transition: transform ease-out 250ms;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: stretch;
+    background: $accent;
+}
+nav li {
+    text-align: center;
+    &:not(:last-of-type) {
+        border-bottom: 1px solid $black;
+    }
+}
+
+nav li:hover {
+    background: $gray;
+}
+
+nav a {
+    display: inline-block;
+    font-family: $six-caps;
+    font-size: 4rem;
+    color: $black;
+    letter-spacing: .2em;
+    padding: calc(100vh/10);
+    line-height: 0;
+    width: 100%;
+    @media (max-width: 375px) {
+        margin-right: 3em;
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.menu-close {
+    display: none;
+}
+.close-caption {
+    display: none;
+}
+
+.nav-is-open {
+    nav {
+        transform: translateX(0);
+    }
+    .container-all {
+        transform: translateX(80%);
+    }
+    .menu-close {
+        display: block;
+    }
+    .close-caption {
+        display: block;
+        @media (max-width: 420px) {
+            display: none;
+        }
+    }
+    .menu-button {
+        display: none;
+    }
+    .menu-caption {
+        display: none;
+    }
+}
+
+.container-all {
+    transition: transform ease-out 250ms;
+}
