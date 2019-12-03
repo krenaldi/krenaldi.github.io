@@ -145,6 +145,20 @@ button {
   padding-left: 16.5px;
   padding-right: 27px; }
 
+.skills {
+  text-align: left;
+  background-color: #ffffff;
+  padding-top: 1.5em;
+  padding-left: 1.5em; }
+
+#skills {
+  margin-bottom: 1rem; }
+
+.skills-container {
+  width: 90%;
+  margin-left: 1em;
+  justify-content: center; }
+
 .portfolio {
   text-align: left;
   background-color: #ffffff;
@@ -296,7 +310,7 @@ nav a {
   font-size: 4rem;
   color: #000000;
   letter-spacing: .2em;
-  padding: calc(100vh/10);
+  padding: calc(100vh/12);
   line-height: 0;
   width: 100%; }
   @media (max-width: 375px) {
