@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/krenaldi/krenaldi.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "browser-sync": "^1.9.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^5.1.0"
   }
 }
