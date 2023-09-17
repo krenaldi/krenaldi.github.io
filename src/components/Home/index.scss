@@ -1,0 +1,80 @@
+.home-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 52px;
+    margin: 0;
+    font-family: 'Coolvetica', sans-serif;
+    font-weight: 400;
+
+    &::before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      font-size: 18px;
+      color: #ffd700;
+      position: absolute;
+      margin-top: -40px;
+      left: 15px;
+      opacity: 0.6;
+    }
+
+    &::after {
+      content: '</h1>';
+      font-family: 'La Belle Aurore', cursive;
+      font-size: 18px;
+      color: #ffd700;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1.7s backwards;
+      opacity: 0.6;
+    }
+
+    img {
+      width: 32px;
+      margin-left: 20px;
+      opacity: 0;
+      height: auto;
+      animation: rotateIn 1s linear both;
+      animation-duration: 1.4s;
+    }
+  }
+
+  h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+
+  .btn {
+    color: #ffd700;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 20px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      color: #333333;
+      background: #ffd700;
+    }
+  }
+}
