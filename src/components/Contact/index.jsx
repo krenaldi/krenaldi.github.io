@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
+import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -86,10 +87,36 @@ const Contact = () => {
                     required="required"
                   />
                 </li>
-                <li><input type="submit" className="btn" value="SEND" /></li>
+                <li>
+                  <input type="submit" className="btn" value="SEND" />
+                </li>
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info-map">
+          Kris Renaldi
+          <br />
+          South Plainfield, NJ, US
+          <br />
+          <span>krenaldi@comcast.net</span>
+        </div>
+        <div className="map-wrapper">
+          <MapContainer
+            center={[40.5807, -74.414]}
+            zoom={12}
+            scrollWheelZoom={false}
+          >
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker position={[40.5807, -74.414]}>
+              <Popup className="popup">
+                Near public transportation to NYC and Philadelphia
+              </Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
