@@ -2,7 +2,14 @@ import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import {
+  faCss3,
+  faGitAlt,
+  faHtml5,
+  faJsSquare,
+  faNode,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 
 const About = () => {
@@ -12,7 +19,7 @@ const About = () => {
     setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
-  }, [])
+  }, []);
 
   return (
     <>
@@ -63,7 +70,7 @@ const About = () => {
               <FontAwesomeIcon icon={faGitAlt} color="#ec4d28" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faAngular} color="#dd0031" />
+              <FontAwesomeIcon icon={faNode} color="#347f2f" />
             </div>
           </div>
         </div>
@@ -71,6 +78,6 @@ const About = () => {
       <Loader type="pacman" />
     </>
   );
-}
+};
 
-export default About
+export default About;
