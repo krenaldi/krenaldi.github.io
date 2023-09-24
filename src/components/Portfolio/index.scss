@@ -106,3 +106,41 @@
     }
   }
 }
+
+@media screen and (max-width: 870px) {
+  .container.portfolio-page {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    h1.page-title {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .image-box {
+      height: 200px;
+      flex: 0 0 100%;
+      max-width: calc(50% - 10px);;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container.portfolio-page {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    h1.page-title {
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+
+    .image-box {
+      height: 200px;
+      flex: 0 0 100%;
+      max-width: calc(100% - 10px);
+    }
+  }
+}
