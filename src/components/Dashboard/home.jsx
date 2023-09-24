@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { auth, storage, db } from '../../firebase';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
-import { addDoc, collection } from 'firebase/firestore';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 
 const Home = () => {
   const form = useRef();
@@ -44,7 +44,8 @@ const Home = () => {
   };
 
   const savePortfolio = async (portfolio) => {
-    console.log(portfolio);
+    portfolio.timestamp = serverTimestamp();
+    // console.log(portfolio);
     try {
       await addDoc(collection(db, 'portfolio'), portfolio);
       window.location.reload(false);
