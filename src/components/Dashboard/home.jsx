@@ -16,7 +16,6 @@ const Home = () => {
       description: formData.get('description'),
       image: formData.get('image'),
     };
-    console.log(data);
 
     const storageRef = ref(storage, `portfolio/${data.image.name}`);
 
@@ -45,7 +44,6 @@ const Home = () => {
 
   const savePortfolio = async (portfolio) => {
     portfolio.timestamp = serverTimestamp();
-    // console.log(portfolio);
     try {
       await addDoc(collection(db, 'portfolio'), portfolio);
       window.location.reload(false);

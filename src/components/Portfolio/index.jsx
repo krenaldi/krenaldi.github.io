@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
-// import portfolioData from '../../data/portfolio.json';
 import './index.scss';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../../firebase';
@@ -9,7 +8,6 @@ import { db } from '../../firebase';
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const [portfolio, setPortfolio] = useState([]);
-  // console.log(portfolioData);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -32,8 +30,6 @@ const Portfolio = () => {
       .sort((a, b) => (a.timestamp > b.timestamp ? -1 : 1));
     setPortfolio(results)
   };
-
-  console.log(portfolio);
 
   const renderPortfolio = (portfolio) => {
     return (
