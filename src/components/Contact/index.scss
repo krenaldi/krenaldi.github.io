@@ -112,3 +112,16 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+@media screen and (max-width: 870px) {
+  .map-wrapper {
+    width: 100%;
+    height: 400px;
+    float: none;
+    margin: 0;
+  }
+
+  .info-map {
+    display: none;
+  }
+}
