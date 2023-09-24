@@ -35,22 +35,21 @@ const About = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            totam odit id, animi, libero, velit rerum tenetur quod perferendis
-            sapiente quam mollitia soluta explicabo similique? Illo provident
-            adipisci aliquid unde!
+            Dedicated Full Stack Developer with experience building Full-stack
+            applications with functional UX/UI. Extensive customer service,
+            technical training, and project management experience during my time
+            at AT&T. Expertise in network troubleshooting & debugging code. I’m
+            always going the extra mile according for my customers who’ve
+            nominated me for company recognition for my outstanding service at
+            AT&T. My mantra is “It’s better to be pro-active than reactive” from
+            working on large scale projects. I love to learn new things as shown
+            by my career path from Web Developer to Network Engineer to Subject
+            Matter Expert to Full Stack Instructor/Developer.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            totam odit id, animi, libero, velit rerum tenetur quod perferendis
-            sapiente quam mollitia soluta explicabo similique? Illo provident
-            adipisci aliquid unde!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            totam odit id, animi, libero, velit rerum tenetur quod perferendis
-            sapiente quam mollitia soluta explicabo similique? Illo provident
-            adipisci aliquid unde!
+            I'm skilled in the latest versions of HTML, CSS, JavaScript, Node.js, and React as well as database management using SQL and NoSQL databases. I also have experience deploying along CI/CD pipelines as well as strengths in technical training and writing,
+            troubleshooting problems, debugging code, managing Git workflow and
+            team collaboration and coaching.
           </p>
         </div>
 
