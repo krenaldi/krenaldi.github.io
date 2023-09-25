@@ -51,12 +51,12 @@ const Portfolio = () => {
                 >
                   View Code
                 </button>
-                <button
+                {port.deploy_url !== '' && <button
                   className="btn"
                   onClick={() => window.open(port.deploy_url)}
                 >
-                  View App
-                </button>
+                  View {port.hasVideo ? 'Demo' : 'App'}
+                </button>}
               </div>
             </div>
           );
