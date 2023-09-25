@@ -11,6 +11,7 @@ const Home = () => {
     const formData = new FormData(form.current);
     const data = {
       title: formData.get('title'),
+      hasVideo: formData.get('hasVideo') === 'on' ? true : false,
       repo_url: formData.get('repo_url'),
       deploy_url: formData.get('deploy_url'),
       description: formData.get('description'),
