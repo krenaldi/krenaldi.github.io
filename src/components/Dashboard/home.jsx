@@ -62,6 +62,11 @@ const Home = () => {
         </label>
         <br />
         <label>
+          Has Video:
+          <input type="checkbox" name="hasVideo" />
+        </label>
+        <br />
+        <label>
           Repo URL:
           <input placeholder="Repo URL" type="text" name="repo_url" />
         </label>
