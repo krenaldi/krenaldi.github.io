@@ -1,8 +1,9 @@
-# React + Vite
+# Portfolio for Kris Renaldi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo contains the portfolio for myself, Kris Renaldi. Here you can view samples of my work along with some information about me.
 
-Currently, two official plugins are available:
+There's also a contact form you can use to get in touch with me along with links to my LinkedIn profile.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This portfolio was built using React 18 with React Router 6 and scaffolded using Vite. Styling was built using Sass.
+
+Contact form is powered by EmailJS.
